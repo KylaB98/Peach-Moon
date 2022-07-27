@@ -10,14 +10,7 @@ import AppRouter from './AppRouter';
 
 const App = () => {
   return (
-    <Router>
-    <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/products" element={<ProductList />} />
-        <Route path="/contact" element={<ContactForm />} />
-        <Route path="/cart" element={<Cart />} />
-    </Routes>
-</Router>
+    <Home />
   )
 }
 
