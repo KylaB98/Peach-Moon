@@ -88,7 +88,7 @@ const NavBar = () => {
     <Container>
         <Wrapper>
             <Left>
-                <MenuItem><a href>Shop</a></MenuItem>
+                <MenuItem>Shop</MenuItem>
             </Left>
             <Center>
                 <Logo>Peach Moon</Logo>
