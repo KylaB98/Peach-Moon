@@ -92,30 +92,36 @@ const Payment = styled.img`
     width: 50%;
 `;
 
+
+
 const Footer = () => {
   return (
     <Container>
         <Left>
             <Logo>Peach Moon</Logo>
-            <Description>Peach Moon is a mystics and curiosities shop located in the heart of Atlanta, Georgia. We're brand new and ready to help you in your journey into the mysterious! Limited stock for the moment, but we do take requests for things you want to see in the future! Contact us and let us know what ou want ot see from us.</Description>
+            <Description>Peach Moon is a mystics and curiosities shop located in the heart of Atlanta, Georgia. We're brand new and ready to help you in your journey into the mysterious! Limited stock for the moment, but we do take requests for things you want to see in the future! Contact us and let us know what you want to see from us.</Description>
             <Copyright> &copy; PeachMoon.co 2022 </Copyright>
         </Left>
         <SocialContainer>
             <SocialIcon color="F4A261">
-                <Link to={{pathname: "facebook.com"}} target="_blank">
-                <FontAwesomeIcon icon={brands ('facebook')} />
-                </Link>
-            </SocialIcon>
-            <SocialIcon color="F4A261">
-                <a hfref="twitter.com">
-                <FontAwesomeIcon icon={brands ('twitter')} />
+                <a href="https://facebook.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <FontAwesomeIcon icon={brands ('facebook')} />
                 </a>
             </SocialIcon>
             <SocialIcon color="F4A261">
-                <FontAwesomeIcon icon={brands ('instagram')} />
+                <a href="https://twitter.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <FontAwesomeIcon icon={brands ('twitter')} />
+                </a>
             </SocialIcon>
             <SocialIcon color="F4A261">
-                <FontAwesomeIcon icon={brands ('pinterest')} />
+                <a href="https://instagram.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <FontAwesomeIcon icon={brands ('instagram')} />
+                </a>
+            </SocialIcon>
+            <SocialIcon color="F4A261">
+                <a href="https://pinterest.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <FontAwesomeIcon icon={brands ('pinterest')} />
+                </a>
             </SocialIcon>
         </SocialContainer>
         <Center>

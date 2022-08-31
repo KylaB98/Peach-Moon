@@ -83,20 +83,24 @@ const MenuItem = styled.div`
 `;
 
 
+
 const NavBar = () => {
   return (
     <Container>
         <Wrapper>
             <Left>
-                <MenuItem>Shop</MenuItem>
+                <MenuItem>
+                    <Link to="/products" style={{ textDecoration: 'none', color: 'inherit' }}>Shop</Link>
+                </MenuItem>
             </Left>
             <Center>
-                <Logo>Peach Moon</Logo>
+                <Logo><Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Peach Moon</Link></Logo>
             </Center>
             <Right>
-                <MenuItem>Contact Us</MenuItem>
                 <MenuItem>
-                    <FontAwesomeIcon icon={solid ('cart-shopping')} style={{color:"#F4A261", fontSize:25}} />
+                    <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>Contact Us</Link></MenuItem>
+                <MenuItem>
+                    <Link to="/cart"><FontAwesomeIcon icon={solid ('cart-shopping')} style={{color:"#F4A261", fontSize:25}} /></Link>
                 </MenuItem>
             </Right>
         </Wrapper>
